@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 //config view Engine
 configViewEngine(app);
 
-//init web routes
+//init web routes ==> Giúp express biết người dùng vào link nào
 initWebRoutes(app);
 
 

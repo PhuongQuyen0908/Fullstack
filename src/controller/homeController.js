@@ -4,9 +4,11 @@ const handleHelloword = (req,res) => {
 
 
 const handleUserPage = (req,res) => {
+    //get data from 
     return res.render("user.ejs");  
 }
 
+//Chú ý chữ s cuối cùng của từ exports
 module.exports = {
     handleHelloword,
     handleUserPage,

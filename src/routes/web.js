@@ -20,7 +20,6 @@ const initWebRoutes = (app) => {
     router.get("/",homeController.handleHelloword);
     router.get("/user",homeController.handleUserPage);
     
-    //Ứng dụng bắt đầu bằng phần chữ ở dưới
     return app.use("/",router)
 }
 
