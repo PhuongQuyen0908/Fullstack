@@ -12,14 +12,12 @@ const router = express.Router();
 
 
 const initWebRoutes = (app) => {
-    //Khi dùng một website để định hướng trang thì sẽ có những method
-    //khi người dùng truy cập vào url / server phản hồi lại nội dung là "Hello world"
-
     //Two paramenters: path, handler
     //Handler: hàm xử lý path
-    router.get("/",homeController.handleHelloword);
+    router.get("/",homeController.handleHelloword); //get: client lấy dữ liệu từ server
     router.get("/user",homeController.handleUserPage);
-    
+    router.post("/users/create-user",homeController.handleCreateNewUser); //post: client đưa dữ liệu lên server
+    //Website bắt đầu bằng gì?
     return app.use("/",router)
 }
 
